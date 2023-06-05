@@ -21,7 +21,7 @@ public class swl
     }
     static int is_palindrome(int m)
     {
-        int  a=m;
+        int a = m;
         int s=0,b;
         while(m!=0)
         {
@@ -31,17 +31,18 @@ public class swl
         }
         if(a==s)
         {
-          return 1;  
+            return 1;
         }
         else
         {
             return 0;
         }
     }
-    public static void main(String args[])
+    public static void main(String asd[])
     {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        scan.close();
         for(int i=n+1;i!=0;i++)
         {
             if(is_prime(i)==1)
@@ -53,5 +54,6 @@ public class swl
                 }
             }
         }
+        
     }
 }
